@@ -29,9 +29,9 @@ jobs:
             URL="http://ec2-52-90-52-64.compute-1.amazonaws.com:3000/"
             if curl -s --head ${URL} 
             then
-              return 0
+              "echo worked"
             else
-              return 1
+              "echo not worked"
             fi
 
 # Invoke jobs via workflows
